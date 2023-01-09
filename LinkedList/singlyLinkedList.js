@@ -95,8 +95,10 @@ class linkedList {              //CRUD Operation in node from linked List
         let count = 0;
 
         if (index == 0) {
+            // If empty, make head
             this.head = current.next;
         } else {
+            //else make the next of current value as new value
             while (count < index) {
                 count++
                 previous = current;
